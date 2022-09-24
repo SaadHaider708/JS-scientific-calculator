@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>JS Project 1 (Calculator)</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="calculator_body">
+      <!-- Variable section -->
+      <section class="variable_decleration_body aside_text">
+        <h4>You can declare a variable here !!</h4>
+        <section class="variable_screen">
+          <input
+            class="variable_input"
+            type="text"
+            placeholder="Example: x=5"
+          />
+          <button class="create_Var_Btn">create</button>
+        </section>
+        <h3>Single Character Variables only</h3>
+
+        <section class="variable_screen">
+          <div class="variable_info">
+            <div>
+              <small class="var_info">
+                How to use it?
+                <ol>
+                  <li>
+                    You can declare single charater Variables by simply typing
+                    in the text field above for example: <strong> x=10</strong>,
+                    but doing so will erase this <strong>"How To"</strong> so
+                    read before you continue.
+                  </li>
+                  <li>
+                    While using the calculator, please keep in mind that using
+                    parenthesis should be followed by your desired operator for
+                    example <strong>cos(3)*100</strong>, without the operator
+                    after closing paranthesis <em>cos(3)100</em> will not work.
+                  </li>
+                  <li>
+                    Calculation history will be saved which you can remove one
+                    by one at any time, and by clicking on the
+                    <a>highlighted</a>
+                    result of the history expressions you can use that value in
+                    a new expression.
+                  </li>
+                </ol>
+              </small>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Calculator section -->
+      <section class="calc_section">
+        <section class="container-calc-display text">
+          <h4>Calculator Output Display</h4>
+          <div id="output-screen"></div>
+        </section>
+
+        <section class="container-calc-input text">
+          <input
+            class="numberInput"
+            type="text"
+            placeholder="i.e: π*(cos(3)+100)"
+          />
+        </section>
+        <section class="container-calc-body">
+          <div class="calc"></div>
+        </section>
+      </section>
+
+      <!-- History section -->
+      <section class="history_body aside_text">
+        <h4>History Display</h4>
+        <section class="history_screen">
+          <div class="history_item">
+            <!-- <small id="0" onclick="getAnswer(this.id)"
+              >1. 9*9 = <a>81.00</a></small
+            >
+            <hr /> -->
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
